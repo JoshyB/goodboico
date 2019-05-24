@@ -6,7 +6,9 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
+  text-decoration: none;
 }
+html,
 body {
   margin: 0;
   overflow-x: hidden;
@@ -49,33 +51,32 @@ nav {
   transform: translateY(-100%);
 }
 
-.nav__items ul li {
+.nav_items ul li {
   list-style: none;
+  white-space: nowrap;
 }
 
-.nav__items ul li a {
+.nav_items ul li a {
   text-decoration: none;
   margin: 0 10px;
   color: #333;
 }
 
-.nav__items ul li a:hover {
+.nav_items ul li a:hover {
   color: #777;
 }
 
-.nav__brand {
+.nav__brand a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: 20px;
 }
 
 .nav__brand p {
@@ -83,22 +84,7 @@ nav {
   color: dodgerblue;
 }
 
-.nav__items-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 2;
-  -ms-flex: 2;
-  flex: 2;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.nav__items-right {
+.nav_items {
   margin-right: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -114,6 +100,17 @@ nav {
   align-items: center;
 }
 
+.nav__items ul li a {
+  color: #555;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+/* hiddon on desktop */
+.mobile_nav {
+  display: none;
+}
+
 /* *****************nav animations ********************* */
 .slide-down {
   -webkit-transition: all 0.8s ease;
@@ -126,6 +123,8 @@ nav {
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
+
+/* ************************************************************* */
 
 .content {
   display: grid;
@@ -155,6 +154,7 @@ nav {
   height: 200px;
   -webkit-transform: rotate(-30deg);
   transform: rotate(-30deg);
+  z-index: 100;
 }
 
 .content .social {
@@ -358,7 +358,7 @@ article button:hover {
 
 @media (max-width: 768px) {
   .content {
-    grid-template-rows: 80vh auto;
+    grid-template-rows: 100vh auto;
     grid-template-columns: 50px 1fr 50px;
   }
 

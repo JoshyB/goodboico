@@ -8,3 +8,11 @@ window.onload = function() {
     navBar.classList.add("nav-is-active");
   }
 };
+
+const links = document.querySelectorAll("a");
+
+links.forEach(element => {
+  element.addEventListener("click", e => {
+    e.preventDefault();
+  });
+});
