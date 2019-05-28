@@ -1,10 +1,13 @@
 {
-  "name": "vanilla_boilerplate",
+  "name": "Goodboico",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html"
+  },
+  "engines": {
+    "node": "11.12.0"
   }
 }
