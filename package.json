@@ -1,11 +1,9 @@
 {
-  "name": "Goodboico",
+  "name": "goodboico",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "scripts": {
-    "start": "parcel index.html"
-  },
+  "scripts": {},
   "engines": {
     "node": "11.12.0"
   }
