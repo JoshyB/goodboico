@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "serve index.html"
+  },
   "engines": {
     "node": "11.12.0"
   }
