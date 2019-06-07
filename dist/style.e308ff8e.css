@@ -418,5 +418,24 @@ article button:hover {
   }
 }
 
+@media screen and (orientation: landscape) and (max-width: 900px) {
+  .content {
+    height: 150vh;
+  }
+  .content article {
+    height: 110vh;
+    margin-top: auto;
+  }
+
+  .content > img {
+    width: 40%;
+    top: 500px;
+  }
+
+  .content .paw > img {
+    top: -200px;
+  }
+}
+
 
 /*# sourceMappingURL=/style.e308ff8e.css.map */
